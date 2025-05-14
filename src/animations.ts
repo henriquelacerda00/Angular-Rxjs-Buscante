@@ -6,7 +6,7 @@ export const animationBooksTrigger = trigger('booksAnimation', [
       // ➡️ Animação de ENTRADA (primeiro os novos entram)
       query(':enter', [
         style({ opacity: 0, transform: 'translateY(-20px)' }),
-        stagger(100, [
+        stagger(200, [
           animate('400ms ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
         ])
       ], { optional: true }),
