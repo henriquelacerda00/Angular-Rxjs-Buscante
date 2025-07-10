@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 h1, h2, h3 {
@@ -17,6 +18,13 @@ html {
 
 body {
   padding-bottom: 83px;
+  overflow-x: hidden;
+}
+
+/* Garante que imagens e inputs não quebrem o layout */
+img, input {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -35,3 +43,11 @@ button:hover {
   border: 2px solid #050C42;
 }
 
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 4rem;
+  }
+  .container {
+    padding-top: 1rem;
+  }
+}

@@ -80,7 +80,23 @@ button:hover {
 }
 
 
-
-
-
+@media (max-width: 768px) {
+  .card, .card-livro {
+    display: flex;
+    flex-direction: column;
+    width: 85vw; /* Ocupa 85% da largura da tela */
+    height: auto; /* Altura se ajusta ao conteúdo */
+    margin: 1rem auto; /* Centraliza o card */
+  }
+  img {
+    width: 100%;
+    min-width: unset;
+    border-radius: 8px 8px 0 0;
+  }
+  .info-card {
+    border-radius: 0 0 8px 8px;
+    align-items: center;
+    text-align: center;
+  }
+}
 

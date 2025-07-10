@@ -119,13 +119,21 @@ section button {
   margin-top: 72px;
   margin-left: 64px;
 }
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 768px) {
+  .busca {
+    width: 90%;
+  }
+  section input {
+    width: 100%;
+  }
+  .container-card {
+    width: 85%;
+  }
+  .imagens {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ilustracao, .titulo {
+    margin: 1rem 0;
+  }
+}
